@@ -2,12 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import AppBar from './components/AppBar/AppBar';
 import Container from './components/Container/Container';
-// import HomeView from './views/HomeView';
-// import AuthorsView from './views/AuthorsView';
-// import BooksView from './views/BooksView';
-// import BookDetailsView from './views/BookDetailsView';
-// import NotFoundView from './views/NotFoundView';
-// import TableView from './views/TableView';
+
 
 const HomePage = lazy(() =>
   import('./views/HomePage.js'),
@@ -20,7 +15,7 @@ export default function App() {
     <Container>
       <AppBar />
 
-      <Suspense fallback={<h1>ЗАГРУЖАЕМ МАРШРУТ...</h1>}>
+      <Suspense fallback={<h1>Loading...</h1>}>
         <Switch>
           <Route path="/" exact>
             <HomePage />
