@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/PageHeading/PageHeading.module.css"],"names":[],"mappings":"AAAA,0BACE,aAAuB,CACvB,eACF","file":"0.9eeef564.chunk.css","sourcesContent":[".title {\n  color: rgb(185, 10, 10);\n  font-weight: 500;\n}\n"]}
